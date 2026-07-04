@@ -9,7 +9,7 @@ const NAV_LINKS = [
   { label: 'Contact', href: 'mailto:ozaydinerr@gmail.com' },
 ];
 
-const PORTRAIT_URL = `${import.meta.env.BASE_URL}avatar.png`;
+const PORTRAIT_URL = `${import.meta.env.BASE_URL}avatar.webp`;
 
 export default function HeroSection() {
   return (
@@ -36,7 +36,7 @@ export default function HeroSection() {
         </FadeIn>
       </div>
 
-      <div className="absolute left-1/2 top-1/2 z-10 w-[280px] -translate-x-1/2 -translate-y-1/2 sm:top-auto sm:bottom-0 sm:w-[360px] sm:translate-y-0 md:w-[440px] lg:w-[520px]">
+      <div className="absolute left-1/2 top-1/2 z-10 w-[240px] -translate-x-1/2 -translate-y-1/2 sm:top-auto sm:bottom-0 sm:w-[320px] sm:translate-y-0 md:w-[400px] lg:w-[460px]">
         <FadeIn delay={0.6} y={30}>
           <Magnet
             padding={150}
@@ -44,11 +44,7 @@ export default function HeroSection() {
             activeTransition="transform 0.3s ease-out"
             inactiveTransition="transform 0.6s ease-in-out"
           >
-            <img
-              src={PORTRAIT_URL}
-              alt="Oguz Aydiner portrait"
-              className="aspect-[3/4] w-full rounded-t-full object-cover object-top"
-            />
+            <img src={PORTRAIT_URL} alt="Oguz Aydiner portrait" className="w-full" />
           </Magnet>
         </FadeIn>
       </div>
